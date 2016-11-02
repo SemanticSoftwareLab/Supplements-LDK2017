@@ -24,12 +24,18 @@ The knowledge base can be published with [Apache Jena Fuseki](https://jena.apach
 The knowledg-base triples.zip file is distributed under the terms of the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/). You can find a copy of the license in the [knowledge-base](../master/knowledge-base) folder.
 
 ## Queries
-The queries discussed in this section are provided to reproduce the figures in the Application section of our paper. The SPARQL queries can be found in the [queries](../queries) folder.
+The queries discussed in this section are provided to reproduce the figures in the Application section of our paper. The SPARQL queries can be found in the [queries](../master/queries) folder.
 
-### Scenario 1: 
+### Scenario 1: Summarizing Relevant Articles
+The goal of this scenario is to find documents that mention a specific topic (i.e., named entity) in their content. To this end, we aim to retrieve all the topics (i.e., named entities) within rhetorical zones of a given document and then perform a federated query to the DBpedia ontology in order to expand the search for relevant documents from the dataset.
 
-### Scenario 2:
+Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results.
 
-### Scenario 3:
+
+### Scenario 2:  Curating a Personalized Reading List
+
+
+### Scenario 3: Filling the Knowledge Gap of Learners
+
 
 
