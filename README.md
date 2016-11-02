@@ -4,6 +4,11 @@ experiments submitted to the [11th International Conference
 on Semantic Computing (IEEE ICSC 2017)](http://icsc.eecs.uci.edu/2017/).
 
 ## Knowledge Base
+The provided knowledge base contains all the extracted entities from our dataset of 90 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
+
+Additionally, the knowledge base contains two exemplary user profiles:
+* A *Researcher* profile that represents the user profile of a computer science professor, populated from the recent publications of the paper's second author.
+* A *Leaner* profile that represents the user profile of a computer science PhD student, populated from the recent publications of the paper's first author.
 
 ### Publishing the knowledge base through Fuseki
 The knowledge base can be published with [Apache Jena Fuseki](https://jena.apache.org/documentation/serving_data/) that can servce RDF data over HTTP. 
@@ -32,7 +37,7 @@ The goal of this scenario is to find documents that mention a specific topic (i.
 Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results.
 
 ### Scenario 2:  Curating a Personalized Reading List
-The goal of Scenario 2 is to personalize the list of document retrieved from the query in [Scenario 1](#scenario-1-summarizing-relevant-articles) and order them with respect to how many topics in each document matches against a given user's competences in his profile.
+The goal of Scenario 2 is to personalize the list of document retrieved from the query in [Scenario 1](#scenario-1-summarizing-relevant-articles) and order them with respect to how many topics in each document matches against a given user's competences in his profile (in this user, the researcher profile).
 
 Executing [Query 2](../master/queries/query2.rq) against the knowledge base will return an integer number that can be used to rank the result set from the first query.
 
