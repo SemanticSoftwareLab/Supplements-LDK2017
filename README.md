@@ -13,7 +13,9 @@ The knowledge base can be published with [Apache Jena Fuseki](https://jena.apach
 
    a) You can create an empty dataset with Fuseki and upload the .nq file using the "upload files" tab.
 
-   b) Alternatively, you can use Apache Jena's [TDB-loader command](https://jena.apache.org/documentation/tdb/commands.html#tdbloader) to copy the triples to a directory on your disk, and publish the directory through Fuseki:
+   b) Alternatively, you can use Apache Jena's [TDB-loader command](https://jena.apache.org/documentation/tdb/commands.html#tdbloader) to copy the triples to a directory on your disk and publish the directory through Fuseki:
+
+```/JENA_INSTALLATION/bin/tdbloader --loc=/PATH/TO/TRIPLESTORE /PATH/TO/triples.nq```
    
 1. more stuff
 
