@@ -21,7 +21,7 @@ The knowledge base can be published with [Apache Jena Fuseki](https://jena.apach
 
 ### License
 
-The knowledg-base triples.zip file is distributed under the terms of the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/). You can find a copy of the license in the [knowledge-base](../master/knowledge-base) folder.
+The knowledg-base (triples.zip) is distributed under the terms of the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/). You can find a copy of the license in the [knowledge-base](../master/knowledge-base) folder.
 
 ## Queries
 The queries discussed in this section are provided to reproduce the figures in the Application section of our paper. The SPARQL queries can be found in the [queries](../master/queries) folder.
@@ -37,6 +37,6 @@ The goal of Scenario 2 is to personalize the list of document retrieved from the
 Executing [Query 2](../master/queries/query2.rq) against the knowledge base will return an integer number that can be used to rank the result set from the first query.
 
 ### Scenario 3: Filling the Knowledge Gap of Learners
+In Scenario 3, we incorporate our learner user profile in the query. The goal here is to find all topics in a document that the user does not know about and bring in additional information (e.g., a brief description and online sources) from Linked Open Data ontologies (DBpedia ontology in our case).
 
-
-
+Execute [Query 3](../master/queries/query3.rq) against the Fuseki endpoint to see the results.
