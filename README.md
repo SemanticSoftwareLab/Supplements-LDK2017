@@ -17,9 +17,7 @@ The knowledge base can be published with [Apache Jena Fuseki](https://jena.apach
 
    ```/JENA_INSTALLATION/bin/tdbloader --loc=/PATH/TO/TRIPLESTORE /PATH/TO/triples.nq```
    
-1. more stuff
-
-
+1. After publishing the knowledge base, verify that all of the triples are uploaded. A triple count on the knowledge base should return 1,623,868 triples.
 
 ## Queries
 
