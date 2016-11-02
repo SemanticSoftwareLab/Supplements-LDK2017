@@ -1,5 +1,5 @@
 # Supplementary Materials for our ICSC 2017 Submission
-This repository contains the supplementary material used to reproduce the
+This repository contains the supplementary materials used to reproduce the
 experiments submitted to the [11th International Conference
 on Semantic Computing (IEEE ICSC 2017)](http://icsc.eecs.uci.edu/2017/).
 
