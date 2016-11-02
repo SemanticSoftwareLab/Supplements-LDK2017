@@ -19,6 +19,10 @@ The knowledge base can be published with [Apache Jena Fuseki](https://jena.apach
    
 1. After publishing the knowledge base, verify that all of the triples are uploaded. A triple count on the knowledge base should return 1,623,868 triples.
 
+### License
+
+The knowledg-base triples.zip file is distributed under the terms of the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/). You can find a copy of the license in the [knowledge-base](../master/knowledge-base) folder.
+
 ## Queries
 
 
