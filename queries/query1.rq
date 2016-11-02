@@ -1,0 +1,21 @@
+PREFIX pubo:  <http://lod.semanticsoftware.info/pubo/pubo#>
+PREFIX sro: <http://salt.semanticauthoring.org/ontologies/sro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX cnt: <http://www.w3.org/2011/content#>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+
+SELECT ?subject ?REcontent ?NEcontent WHERE {
+  SERVICE <http://dbpedia.org/sparql> {
+    dbpedia:Linked_data dcterms:subject ?category .
+    ?subject dcterms:subject ?category . 
+  }
+
+ ?paper  pubo:hasAnnotation  ?rhetoricalEntity .
+ ?rhetoricalEntity   rdf:type   sro:Contribution .
+ ?rhetoricalEntity   pubo:containsNE ?namedEntity.
+ ?namedEntity rdfs:isDefinedBy ?subject .
+ ?rhetoricalEntity   cnt:chars   ?REcontent .
+ ?namedEntity cnt:chars ?NEcontent.
+}

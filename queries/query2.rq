@@ -1,0 +1,22 @@
+PREFIX pubo:  <http://lod.semanticsoftware.info/pubo/pubo#>
+PREFIX sro: <http://salt.semanticauthoring.org/ontologies/sro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX um: <http://intelleo.eu/ontologies/user-model/ns/>
+PREFIX c: <http://www.intelleo.eu/ontologies/competences/ns/>
+PREFIX local: <http://home/bahar/Repository/zeeva/Corpora/PropCorp/PeerJ-CompSci/XML/>
+PREFIX profile: <http://semanticsoftware.info/lodexporter/creator/>
+
+SELECT (COUNT(DISTINCT ?uri) as ?count) WHERE {
+  local:cs-78.xml  pubo:hasAnnotation ?rhetEnt.
+  ?rhetEnt rdf:type sro:Contribution.
+  ?rhetEnt pubo:containsNE ?namedEnt.
+  ?namedEnt rdfs:isDefinedBy  ?uri.  
+  FILTER EXISTS {
+	?user rdf:type um:User.
+  	?user rdfs:isDefinedBy profile:R20 .
+  	?user um:hasCompetencyRecord ?comptenceRecord.
+  	?comptenceRecord  c:competenceFor ?comptence.
+  	?comptence rdfs:isDefinedBy ?uri.
+  }
+}
