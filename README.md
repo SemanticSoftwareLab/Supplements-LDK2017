@@ -31,9 +31,10 @@ The goal of this scenario is to find documents that mention a specific topic (i.
 
 Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results.
 
-
 ### Scenario 2:  Curating a Personalized Reading List
+The goal of Scenario 2 is to personalize the list of document retrieved from the query in [Scenario 1](#scenario-1-summarizing-relevant-articles) and order them with respect to how many topics in each document matches against a given user's competences in his profile.
 
+Executing [Query 2](../master/queries/query2.rq) against the knowledge base will return an integer number that can be used to rank the result set from the first query.
 
 ### Scenario 3: Filling the Knowledge Gap of Learners
 
