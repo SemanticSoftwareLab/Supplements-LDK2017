@@ -17,8 +17,8 @@ The triples in our knowledge base use a number of (linked open) vocabularies:
 | ------------- |:-------------:|:-----|:-------------|
 | Publication Ontology (PUBO) | pubo | PUBO vocabularies are used to express the relations between documents, annotations and their inter-relations. | http://lod.semanticsoftware.info/pubo/pubo |
 | SALT Rhetorical Ontology (SALT) | sro | Used for describing rhetorical elements (claims and contributions) of documents. | http://salt.semanticauthoring.org/ontologies/sro   |
-| Resource Description Framework (RDF) | rdf |       | http://www.w3.org/1999/02/22-rdf-syntax-ns |
-| RDF Schema (RDFS) | rdfs |       | http://www.w3.org/2000/01/rdf-schema |
+| Resource Description Framework (RDF) | rdf | Formal representation of semantic triples. | http://www.w3.org/1999/02/22-rdf-syntax-ns |
+| RDF Schema (RDFS) | rdfs | Schema used in our knowledge base, as well as DBpedia ontology. | http://www.w3.org/2000/01/rdf-schema |
 | Content Ontology | cnt | Used for representing the literal (verbatim) content of extracted annotations.| http://www.w3.org/2011/content |
 | User Modeling Ontology | um | Used for formal representation of scholar user profiles. | http://intelleo.eu/ontologies/user-model/ns/ |
 | User Competence Management | c | Used for modeling users' competences as well as their competence records (i.e., provenance information).| http://www.intelleo.eu/ontologies/competences/ns/ |
