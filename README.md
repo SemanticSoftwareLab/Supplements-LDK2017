@@ -16,15 +16,15 @@ The triples in our knowledge base use a number of (linked open) vocabularies:
 | Vocabulary/Ontology    | Namespace in KB | Description   | URL  |
 | ------------- |:-------------:|:-----|:-------------|
 | Publication Ontology (PUBO) | pubo | PUBO vocabularies are used to express the relations between documents, annotations and their inter-relations. | http://lod.semanticsoftware.info/pubo/pubo |
-| SALT Rhetorical Ontology (SALT)      | sro |       | http://salt.semanticauthoring.org/ontologies/sro   |
+| SALT Rhetorical Ontology (SALT) | sro | Used for describing rhetorical elements (claims and contributions) of documents. | http://salt.semanticauthoring.org/ontologies/sro   |
 | Resource Description Framework (RDF) | rdf |       | http://www.w3.org/1999/02/22-rdf-syntax-ns |
-| RDF Schema (RDFS) | rdfs | are neat      | http://www.w3.org/2000/01/rdf-schema |
-| Content Ontology | cnt | | http://www.w3.org/2011/content |
+| RDF Schema (RDFS) | rdfs |       | http://www.w3.org/2000/01/rdf-schema |
+| Content Ontology | cnt | Used for representing the literal (verbatim) content of extracted annotations.| http://www.w3.org/2011/content |
 | User Modeling Ontology | um | | http://intelleo.eu/ontologies/user-model/ns |
 | User Competence Management | c | | http://www.intelleo.eu/ontologies/competences/ns/ |
-| Friend-of-a-Friend (FOAF) | foaf | | http://xmlns.com/foaf/0.1/|
-| DBpedia Ontology | dbpedia | | http://dbpedia.org/resoource/|
-| Dublin Core Terms | dcterms | | http://purl.org/dc/terms/|
+| Friend-of-a-Friend (FOAF) | foaf | Used for traversing the DBpedia ontology from resources to their corresponding Wikipedia pages. | http://xmlns.com/foaf/0.1/|
+| DBpedia Ontology | dbpedia | Used for grounding documents' topics with DBpedia ontology resources. | http://dbpedia.org/resoource/|
+| Dublin Core Terms | dcterms | Used for traversing the semantic categories of DBpedia ontology. | http://purl.org/dc/terms/|
 
 ### Publishing the knowledge base through Fuseki
 The knowledge base can be published with [Apache Jena Fuseki](https://jena.apache.org/documentation/serving_data/) that can servce RDF data over HTTP. 
