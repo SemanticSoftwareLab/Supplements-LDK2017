@@ -26,6 +26,9 @@ The triples in our knowledge base use a number of (linked open) vocabularies:
 | DBpedia Ontology | dbpedia | Used for grounding documents' topics with DBpedia ontology resources. | http://dbpedia.org/resoource/|
 | Dublin Core Terms | dcterms | Used for traversing the semantic categories of DBpedia ontology. | http://purl.org/dc/terms/|
 
+### Sample Triples
+![alt text](https://github.com/SemanticSoftwareLab/Supplements-ICSC2017/raw/master/graphics/sample_triples.png "Sample Triples from KB")
+
 ### Publishing the knowledge base through Fuseki
 The knowledge base can be published with [Apache Jena Fuseki](https://jena.apache.org/documentation/serving_data/) that can servce RDF data over HTTP. 
 
