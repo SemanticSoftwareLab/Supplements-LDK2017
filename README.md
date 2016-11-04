@@ -33,7 +33,7 @@ The triples in our knowledge base use a number of (linked open) vocabularies:
 ### Sample Triples
 The following figure shows an example subgraph from our populated knowledge base. At the top we have a document that was processed by the agent. The left half of the graph shows the triples used to represent the user profile of `ex:Bahar` who is an author of paper `ex:Doc#9`. The topics extracted from the document, e.g. `ex:Competence#4` represents a topics that the user is competent in. The right half of the graph shows the semantic representation of the document by agent. As the graph shows, papers and user's can be interlinked through common topic (i.e., named entities in papers and competences in user profiles) instances in the knowledge base.
 
-![alt text](https://github.com/SemanticSoftwareLab/Supplements-ICSC2017/raw/master/graphics/sample_triples.png "Sample Triples from KB")
+![Sample Triples from KB](https://github.com/SemanticSoftwareLab/Supplements-ICSC2017/raw/master/graphics/sample_triples.png "Sample Triples from KB")
 
 ### Publishing the knowledge base through Fuseki
 The knowledge base can be published with [Apache Jena Fuseki](https://jena.apache.org/documentation/serving_data/) that can servce RDF data over HTTP. 
