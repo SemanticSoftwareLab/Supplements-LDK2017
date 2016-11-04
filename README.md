@@ -10,6 +10,22 @@ Additionally, the knowledge base contains two exemplary user profiles:
 * A *Researcher* profile that represents the user profile of a computer science professor, populated from the recent publications of the paper's second author.
 * A *Leaner* profile that represents the user profile of a computer science PhD student, populated from the recent publications of the paper's first author.
 
+### Vocabularies
+The triples in our knowledge base use a number of (linked open) vocabularies:
+
+| Vocabulary/Ontology    | Namespace in KB | Description   | URL  |
+| ------------- |:-------------:|:-----|:-------------|
+| Publication Ontology (PUBO) | pubo | PUBO vocabularies are used to express the relations between documents, annotations and their inter-relations. | http://lod.semanticsoftware.info/pubo/pubo |
+| SALT Rhetorical Ontology (SALT)      | sro |       | http://salt.semanticauthoring.org/ontologies/sro   |
+| Resource Description Framework (RDF) | rdf |       | http://www.w3.org/1999/02/22-rdf-syntax-ns |
+| RDF Schema (RDFS) | rdfs | are neat      | http://www.w3.org/2000/01/rdf-schema |
+| Content Ontology | cnt | | http://www.w3.org/2011/content |
+| User Modeling Ontology | um | | http://intelleo.eu/ontologies/user-model/ns |
+| User Competence Management | c | | http://www.intelleo.eu/ontologies/competences/ns/ |
+| Friend-of-a-Friend (FOAF) | foaf | | http://xmlns.com/foaf/0.1/|
+| DBpedia Ontology | dbpedia | | http://dbpedia.org/resoource/|
+| Dublin Core Terms | dcterms | | http://purl.org/dc/terms/|
+
 ### Publishing the knowledge base through Fuseki
 The knowledge base can be published with [Apache Jena Fuseki](https://jena.apache.org/documentation/serving_data/) that can servce RDF data over HTTP. 
 
