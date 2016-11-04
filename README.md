@@ -5,7 +5,14 @@ on Semantic Computing (IEEE ICSC 2017)](http://icsc.eecs.uci.edu/2017/).
 
 #### Table of Contents
 1. [Knowledge Base](#knowledge-base)
+  1. [Vocabularies](#vocabularies)
+  2. [Sample Triples](#sample-triples)
+  3. [Publishing the Knowledge base](#publishing-the-knowledge-base-through-fuseki)
+  4. [License](#license)
 2. [Queries](#queries)
+  1. [Scenario 1](#scenario-1-summarizing-relevant-articles)
+  2. [Scenario 2](#scenario-2--curating-a-personalized-reading-list)
+  3. [Scenario 3](#scenario-3-filling-the-knowledge-gap-of-learners)
 
 ## Knowledge Base
 The provided knowledge base contains all the extracted entities from our dataset of 90 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
