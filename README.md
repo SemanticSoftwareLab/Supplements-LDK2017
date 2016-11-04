@@ -20,8 +20,8 @@ The triples in our knowledge base use a number of (linked open) vocabularies:
 | Resource Description Framework (RDF) | rdf |       | http://www.w3.org/1999/02/22-rdf-syntax-ns |
 | RDF Schema (RDFS) | rdfs |       | http://www.w3.org/2000/01/rdf-schema |
 | Content Ontology | cnt | Used for representing the literal (verbatim) content of extracted annotations.| http://www.w3.org/2011/content |
-| User Modeling Ontology | um | | http://intelleo.eu/ontologies/user-model/ns |
-| User Competence Management | c | | http://www.intelleo.eu/ontologies/competences/ns/ |
+| User Modeling Ontology | um | Used for formal representation of scholar user profiles. | http://intelleo.eu/ontologies/user-model/ns/ |
+| User Competence Management | c | Used for modeling users' competences as well as their competence records (i.e., provenance information).| http://www.intelleo.eu/ontologies/competences/ns/ |
 | Friend-of-a-Friend (FOAF) | foaf | Used for traversing the DBpedia ontology from resources to their corresponding Wikipedia pages. | http://xmlns.com/foaf/0.1/|
 | DBpedia Ontology | dbpedia | Used for grounding documents' topics with DBpedia ontology resources. | http://dbpedia.org/resoource/|
 | Dublin Core Terms | dcterms | Used for traversing the semantic categories of DBpedia ontology. | http://purl.org/dc/terms/|
