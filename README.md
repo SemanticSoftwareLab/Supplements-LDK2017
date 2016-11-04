@@ -66,7 +66,7 @@ The queries discussed in this section are provided to reproduce the figures in t
 ### Scenario 1: Summarizing Relevant Articles
 The goal of this scenario is to find documents that mention a specific topic (i.e., named entity) in their content. To this end, we aim to retrieve all the topics (i.e., named entities) within rhetorical zones of a given document and then perform a federated query to the DBpedia ontology in order to expand the search for relevant documents from the dataset.
 
-Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results.
+Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results. Note that Query 1 contains a federated query to the DBpedia SPARQL endpoint and might take a while to execute depending on the endpoint status.
 
 ### Scenario 2:  Curating a Personalized Reading List
 The goal of Scenario 2 is to personalize the list of document retrieved from the query in [Scenario 1](#scenario-1-summarizing-relevant-articles) and order them with respect to how many topics in each document matches against a given user's competences in his profile (in this user, the researcher profile).
