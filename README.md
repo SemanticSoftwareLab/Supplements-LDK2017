@@ -3,6 +3,10 @@ This repository contains the supplementary materials used to reproduce the
 experiments submitted to the [11th International Conference
 on Semantic Computing (IEEE ICSC 2017)](http://icsc.eecs.uci.edu/2017/).
 
+#### Table of Contents
+1. [Knowledge Base](#knowledge-base)
+2. [Queries](#queries)
+
 ## Knowledge Base
 The provided knowledge base contains all the extracted entities from our dataset of 90 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
 
