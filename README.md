@@ -1,4 +1,4 @@
-# Supplementary Materials for our ICSC 2017 Submission
+# Supplementary Materials for our ESWC 2017b Submission
 This repository contains the supplementary materials used to reproduce the
 experiments submitted to the [14th Extended Semantic Web Conference (ESWC 2017)](http://2017.eswc-conferences.org).
 
