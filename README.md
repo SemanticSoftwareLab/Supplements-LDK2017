@@ -17,6 +17,13 @@ experiments submitted to the [Language, Data and Knowledge Conference (LDK 2017)
 ## Knowledge Base
 The provided knowledge base contains all the extracted entities from our dataset of 100 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
 
+### URI Schema
+| Entity | URI Schema | Example | Note |
+| ------------- |:-------------:|:-----|:-------------|
+| Article | http://tmp/peerj-cs-100/cs-`nn`.xml | http://tmp/dataset/cs-12.xml | Replace `nn` with {1..98,100,101} |
+| User | http://semanticsoftware.info/lodexporter/author/ `name` | http://semanticsoftware.info/lodexporter/author/carlos+j.-corrada-bravo |  Replace `name` with lower-cased, hypehanted full name of the author |
+
+
 ### Vocabularies
 The triples in our knowledge base use a number of (linked open) vocabularies:
 
