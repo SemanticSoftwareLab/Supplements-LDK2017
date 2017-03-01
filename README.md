@@ -13,6 +13,7 @@ experiments submitted to the [Language, Data and Knowledge Conference (LDK 2017)
   1. [Service 1](#service-1-summarizing-relevant-articles)
   2. [Service 2](#service-2--curating-a-personalized-reading-list)
   3. [Service 3](#service-3-filling-the-knowledge-gap-of-learners)
+  
 
 ## Knowledge Base
 The provided knowledge base contains all the extracted entities from our dataset of 100 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
@@ -20,8 +21,8 @@ The provided knowledge base contains all the extracted entities from our dataset
 ### URI Schema
 | Entity | URI Schema | Example | Note |
 | ------------- |:-------------:|:-----|:-------------|
-| Article | http://tmp/peerj-cs-100/cs-`nn`.xml | http://tmp/dataset/cs-12.xml | Replace `nn` with {1..98,100,101} |
-| User | http://semanticsoftware.info/lodexporter/author/`name` | http://semanticsoftware.info/lodexporter/author/carlos+j.-corrada-bravo |  Replace `name` with lower-cased, hypehanted full name of the author |
+| Article | ht&#8203;tp://tmp/peerj-cs-100/cs-`nn`.xml | http://tmp/dataset/cs-12.xml | Replace `nn` with {1..98,100,101} |
+| User | ht&#8203;tp://semanticsoftware.info/lodexporter/author/`name` | http://semanticsoftware.info/lodexporter/author/carlos+j.-corrada-bravo |  Replace `name` with lower-cased, hypehanted full name of the author |
 
 
 ### Vocabularies
