@@ -1,6 +1,6 @@
-# Supplementary Materials for our ESWC 2017b Submission
+# Supplementary Materials for our LDK 2017 Submission
 This repository contains the supplementary materials used to reproduce the
-experiments submitted to the [14th Extended Semantic Web Conference (ESWC 2017)](http://2017.eswc-conferences.org).
+experiments submitted to the [Language, Data and Knowledge Conference (LDK 2017)](http://ldk2017.org).
 
 #### Table of Contents
 1. [Knowledge Base](#knowledge-base)
@@ -9,9 +9,9 @@ experiments submitted to the [14th Extended Semantic Web Conference (ESWC 2017)]
   3. [Publishing the Knowledge base](#publishing-the-knowledge-base-through-fuseki)
   4. [License](#license)
 2. [Queries](#queries)
-  1. [Scenario 1](#scenario-1-summarizing-relevant-articles)
-  2. [Scenario 2](#scenario-2--curating-a-personalized-reading-list)
-  3. [Scenario 3](#scenario-3-filling-the-knowledge-gap-of-learners)
+  1. [Service 1](#service-1-summarizing-relevant-articles)
+  2. [Service 2](#service-2--curating-a-personalized-reading-list)
+  3. [Service 3](#service-3-filling-the-knowledge-gap-of-learners)
 
 ## Knowledge Base
 The provided knowledge base contains all the extracted entities from our dataset of 90 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
@@ -62,17 +62,17 @@ The knowledg-base (triples.zip) is distributed under the terms of the [Creative 
 ## Queries
 The queries discussed in this section are provided to reproduce the figures in the Application section of our paper. The SPARQL queries can be found in the [queries](../master/queries) folder.
 
-### Scenario 1: Summarizing Relevant Articles
+### Service 1: Summarizing Relevant Articles
 The goal of this scenario is to find documents that mention a specific topic (i.e., named entity) in their content. To this end, we aim to retrieve all the topics (i.e., named entities) within rhetorical zones of a given document and then perform a federated query to the DBpedia ontology in order to expand the search for relevant documents from the dataset.
 
 Execute [Query 1](../master/queries/query1.rq) against the Fuseki endpoint to see the results. Note that Query 1 contains a federated query to the DBpedia SPARQL endpoint and might take a while to execute depending on the endpoint status.
 
-### Scenario 2:  Curating a Personalized Reading List
+### Service 2:  Curating a Personalized Reading List
 The goal of Scenario 2 is to personalize the list of document retrieved from the query in [Scenario 1](#scenario-1-summarizing-relevant-articles) and order them with respect to how many topics in each document matches against a given user's competences in his profile (in this user, the researcher profile).
 
 Executing [Query 2](../master/queries/query2.rq) against the knowledge base will return an integer number that can be used to rank the result set from the first query.
 
-### Scenario 3: Filling the Knowledge Gap of Learners
+### Service 3: Filling the Knowledge Gap of Learners
 In Scenario 3, we incorporate our learner user profile in the query. The goal here is to find all topics in a document that the user does not know about and bring in additional information (e.g., a brief description and online sources) from Linked Open Data ontologies (DBpedia ontology in our case).
 
 Execute [Query 3](../master/queries/query3.rq) against the Fuseki endpoint to see the results.
