@@ -14,11 +14,7 @@ experiments submitted to the [Language, Data and Knowledge Conference (LDK 2017)
   3. [Service 3](#service-3-filling-the-knowledge-gap-of-learners)
 
 ## Knowledge Base
-The provided knowledge base contains all the extracted entities from our dataset of 90 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
-
-Additionally, the knowledge base contains two exemplary user profiles:
-* A *Researcher* profile that represents the user profile of a computer science professor, populated from the recent publications of the paper's second author.
-* A *Leaner* profile that represents the user profile of a computer science PhD student, populated from the recent publications of the paper's first author.
+The provided knowledge base contains all the extracted entities from our dataset of 100 PeerJ Computer Science articles. The semantic triples are expressed using the Resource Description Framework (RDF) syntax.
 
 ### Vocabularies
 The triples in our knowledge base use a number of (linked open) vocabularies:
