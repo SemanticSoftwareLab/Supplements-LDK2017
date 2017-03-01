@@ -5,8 +5,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX um: <http://intelleo.eu/ontologies/user-model/ns/>
 PREFIX c: <http://www.intelleo.eu/ontologies/competences/ns/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
-PREFIX local: <http://home/bahar/Repository/zeeva/Corpora/PropCorp/PeerJ-CompSci/XML/>
-PREFIX profile: <http://semanticsoftware.info/lodexporter/creator/>
+PREFIX local: <http://tmp/peerj-cs-100/>
+PREFIX profile: <http://semanticsoftware.info/lodexporter/author/>
 
 SELECT ?uri ?comment ?wikipedia WHERE {
   local:cs-78.xml  pubo:hasAnnotation ?rhetEntity.
